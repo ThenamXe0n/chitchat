@@ -54,7 +54,7 @@ const ChatBox = (props) => {
         <div className="chat-area">
           {displayMessages.map((messages) => (
             <div className="chat-message" key={messages.id}>
-              <div className="row">
+              <div className={auth.currentUser.displayName === messages.user ? "sender" : "receiver"}>
                 <span>
                   <img
                     src={messages.profile}

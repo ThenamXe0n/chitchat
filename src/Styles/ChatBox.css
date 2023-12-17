@@ -58,6 +58,17 @@ span {
 }
 
 .row {
+  
+}
+
+.sender{
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+}
+.receiver{
+  flex-direction: row;
   display: flex;
   align-items: center;
 }
